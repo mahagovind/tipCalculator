@@ -14,5 +14,7 @@ Comments:
 3) Added dark theme in settings to switch color theme 
 4) Added suggested tip percent(based on service) to settings page
 
-Video walk through 
+Video walk through:
+
+https://github.com/mahagovind/tipCalculator/blob/master/tipCalculatorGIF.gif
 
