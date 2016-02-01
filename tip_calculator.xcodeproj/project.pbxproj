@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		10D8086F1C4225BE0074B058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D8086E1C4225BE0074B058 /* AppDelegate.swift */; };
 		10D808711C4225BE0074B058 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D808701C4225BE0074B058 /* ViewController.swift */; };
-		10D808741C4225BE0074B058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D808721C4225BE0074B058 /* Main.storyboard */; };
+		10D808741C4225BE0074B058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D808721C4225BE0074B058 /* Main.storyboard */; settings = {ASSET_TAGS = (123, ); }; };
 		10D808761C4225BE0074B058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10D808751C4225BE0074B058 /* Assets.xcassets */; };
 		10D808791C4225BE0074B058 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D808771C4225BE0074B058 /* LaunchScreen.storyboard */; };
 		10D808841C4225BE0074B058 /* tip_calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D808831C4225BE0074B058 /* tip_calculatorTests.swift */; };
@@ -18,6 +18,9 @@
 		10D808A71C430B870074B058 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10D808A51C430B870074B058 /* SettingsViewController.xib */; };
 		10D808AA1C4334C00074B058 /* CustomTipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D808A81C4334C00074B058 /* CustomTipViewController.swift */; };
 		10D808AB1C4334C00074B058 /* CustomTipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10D808A91C4334C00074B058 /* CustomTipViewController.xib */; };
+		10D808B01C5F13410074B058 /* SuggestedTipCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D808AE1C5F13410074B058 /* SuggestedTipCollectionViewController.swift */; };
+		10D808B11C5F13410074B058 /* SuggestedTipCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10D808AF1C5F13410074B058 /* SuggestedTipCollectionViewController.xib */; };
+		10D808B31C5F3F2D0074B058 /* SuggestedTipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D808B21C5F3F2D0074B058 /* SuggestedTipCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		10D808A51C430B870074B058 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		10D808A81C4334C00074B058 /* CustomTipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTipViewController.swift; sourceTree = "<group>"; };
 		10D808A91C4334C00074B058 /* CustomTipViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTipViewController.xib; sourceTree = "<group>"; };
+		10D808AE1C5F13410074B058 /* SuggestedTipCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestedTipCollectionViewController.swift; sourceTree = "<group>"; };
+		10D808AF1C5F13410074B058 /* SuggestedTipCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuggestedTipCollectionViewController.xib; sourceTree = "<group>"; };
+		10D808B21C5F3F2D0074B058 /* SuggestedTipCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestedTipCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +113,6 @@
 			children = (
 				10D8086E1C4225BE0074B058 /* AppDelegate.swift */,
 				10D808701C4225BE0074B058 /* ViewController.swift */,
-				10D808721C4225BE0074B058 /* Main.storyboard */,
 				10D808751C4225BE0074B058 /* Assets.xcassets */,
 				10D808771C4225BE0074B058 /* LaunchScreen.storyboard */,
 				10D8087A1C4225BE0074B058 /* Info.plist */,
@@ -115,6 +120,10 @@
 				10D808A51C430B870074B058 /* SettingsViewController.xib */,
 				10D808A81C4334C00074B058 /* CustomTipViewController.swift */,
 				10D808A91C4334C00074B058 /* CustomTipViewController.xib */,
+				10D808721C4225BE0074B058 /* Main.storyboard */,
+				10D808AE1C5F13410074B058 /* SuggestedTipCollectionViewController.swift */,
+				10D808AF1C5F13410074B058 /* SuggestedTipCollectionViewController.xib */,
+				10D808B21C5F3F2D0074B058 /* SuggestedTipCollectionViewCell.swift */,
 			);
 			path = tip_calculator;
 			sourceTree = "<group>";
@@ -199,6 +208,9 @@
 		10D808631C4225BE0074B058 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					123,
+				);
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Maha Govindarajan";
@@ -243,6 +255,7 @@
 			files = (
 				10D808AB1C4334C00074B058 /* CustomTipViewController.xib in Resources */,
 				10D808791C4225BE0074B058 /* LaunchScreen.storyboard in Resources */,
+				10D808B11C5F13410074B058 /* SuggestedTipCollectionViewController.xib in Resources */,
 				10D808761C4225BE0074B058 /* Assets.xcassets in Resources */,
 				10D808741C4225BE0074B058 /* Main.storyboard in Resources */,
 				10D808A71C430B870074B058 /* SettingsViewController.xib in Resources */,
@@ -271,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				10D808711C4225BE0074B058 /* ViewController.swift in Sources */,
+				10D808B01C5F13410074B058 /* SuggestedTipCollectionViewController.swift in Sources */,
+				10D808B31C5F3F2D0074B058 /* SuggestedTipCollectionViewCell.swift in Sources */,
 				10D8086F1C4225BE0074B058 /* AppDelegate.swift in Sources */,
 				10D808A61C430B870074B058 /* SettingsViewController.swift in Sources */,
 				10D808AA1C4334C00074B058 /* CustomTipViewController.swift in Sources */,

@@ -13,11 +13,13 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var colorThemeSwitch: UISwitch!
     @IBOutlet weak var colorThemeLabel: UILabel!
     @IBOutlet weak var tipPercentSegmentedControl: UISegmentedControl!
+    @IBOutlet var suggestedTipSwitch: UISwitch!
     
     let defaults = NSUserDefaults.standardUserDefaults()
     override func viewDidLoad() {
         super.viewDidLoad()
         colorThemeSwitch.on = defaults.boolForKey("colorTheme")
+        suggestedTipSwitch.on = defaults.boolForKey("showSuggestedTip")
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -32,6 +34,9 @@ class SettingsViewController: UIViewController {
         defaults.setBool(colorThemeSwitch.on, forKey:"colorTheme")
     }
     
+    @IBAction func onSuggestedTipToggled(sender: AnyObject) {
+         defaults.setBool(suggestedTipSwitch.on, forKey:"showSuggestedTip")
+    }
     @IBAction func onTipValueChanged(sender: AnyObject) {
         defaults.setInteger(tipPercentSegmentedControl.selectedSegmentIndex, forKey:"defaultTip")
     }

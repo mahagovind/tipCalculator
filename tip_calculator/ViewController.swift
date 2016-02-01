@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var numberOfPeopleField: UITextField!
     @IBOutlet weak var totalText: UILabel!
     @IBOutlet weak var tipText: UILabel!
+    @IBOutlet var suggestedTipImage: UIButton!
     
     @IBOutlet weak var tipLabel: UILabel!
     var customTip :Double = 0.0
@@ -43,6 +44,8 @@ class ViewController: UIViewController {
                 billAmountField.text = defaults.stringForKey("billAmount")
              }
         }
+        suggestedTipImage.hidden = !defaults.boolForKey("showSuggestedTip")
+        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -60,6 +63,8 @@ class ViewController: UIViewController {
         else {
             view.backgroundColor = UIColor.whiteColor()
         }
+        
+        suggestedTipImage.hidden = !defaults.boolForKey("showSuggestedTip")
         computeValues()
 
     }
@@ -124,6 +129,6 @@ class ViewController: UIViewController {
 
         defaults.setObject(billAmountField.text, forKey: "billAmount")
         defaults.setObject(NSDate(), forKey : "lastSavedTime")
-    }   
+    }
 }
 
