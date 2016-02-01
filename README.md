@@ -14,6 +14,10 @@ Comments:
 * Added dark theme in settings to switch color theme 
 * Added suggested tip percent(based on service) to settings page
 
+Enhanced Video Walkthrough :
+
+![Video Walkthrough](tipCalculatorEnhanced.gif)
+
 Video Walkthrough:
 
 ![Video Walkthrough](tipCalculatorGIF.gif)
